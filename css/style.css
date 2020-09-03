@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: capitalize;
+    color: #333 ;
+    font-family: Geneva, Tahoma, sans-serif !important;
+}
+p{
+    font-size: 14px !important;
+    color: #777 !important;
+    line-height: 1.8 !important;
+    text-transform: capitalize;
+}
+/*-----------------------------------------------------------------*/
+/* Start Nav*/
+nav{
+    background-color: rgba(0, 0, 0, .23);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+nav .nav-item .nav-link{
+    transition: color .5s , margin-left .5s,transform .5s;
+    padding: 15px !important;
+    font-size: 18px;
+    position: relative;
+    color: #ffffff !important;
+}
+nav .nav-item .nav-link::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #37d5f1f1;
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 1s ;
+}
+nav .nav-item .nav-link:hover{
+    margin-left: 5px;
+}
+nav .nav-item:hover ::before{
+    transform: scale(1);
+}
+nav .nav-item i{
+    cursor: pointer;
+    transition: color .5s ,transform .5s;
+    padding: 15px !important;
+}
+nav .icon:hover i{
+    transform: scale(1.4);
+    color: #37d5f1f1 !important;
+}
+/* End Nav*/
+/*-----------------------------------------------------------------*/
+/* Start Header*/
+.carousel{
+    height: 625px !important;
+    width: 100%;
+}
+header .carousel .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+/* Strat animation Slide 1*/
+header .carousel .slide1{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+header .carousel .slide1 h3{
+    color: #999 !important;
+    position: relative;
+    animation: h3 1.5s;
+    transition: color .5s;
+}
+header .carousel .slide1 h3:hover{
+    color: #fff !important;
+}
+header .carousel .slide1 h1{
+    color: #fff !important;
+    font-size: 80px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    position: relative;
+    animation: h1 2s;
+}
+header .carousel .slide1 .colors{
+    color: #37d5f1f1 !important;
+}
+header .carousel .slide1 p{
+    color: #fff!important;
+    font-size: 18px;
+    position: relative;
+    animation: p 1.5s;
+}
+/*Start KeyFrames Slide 1*/
+@keyframes h3{
+    0%{
+        top: -400px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes h1{
+    0%{
+        left: -800px;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes p{
+    0%{
+        bottom: -400px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+/*End KeyFrames Slide 1*/
+/* End animation Slide 1*/
+/*-----------------------------------------------------------------*/
+/* Strat animation Slide 2*/
+header .carousel .slide2{
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+header .carousel .slide2 h3{
+    color: #999 !important;
+    position: relative;
+    animation: he3 1s;
+    transition: color .5s;
+}
+header .carousel .slide2 h3:hover{
+    color: #fff !important;
+}
+header .carousel .slide2 h1{
+    color: #fff !important;
+    font-size: 80px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    position: relative;
+    animation: he1 1.5s;
+}
+header .carousel .slide2 .colors{
+    color: #37d5f1f1 !important;
+}
+header .carousel .slide2 p{
+    color: #fff!important;
+    font-size: 18px;
+    position: relative;
+    animation: pa 2s;
+}
+/*Start KeyFrames Slide 2*/
+@keyframes he3{
+    0%{
+        bottom: -400px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes he1{
+    0%{
+        bottom: -400px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes pa{
+    0%{
+        bottom: -400px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+/*End KeyFrames Slide 2*/
+/* End animation Slide 2*/
+/*-----------------------------------------------------------------*/
+/* Strat animation Slide 3*/
+header .carousel .slide3{
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    transform: translateY(-50%);
+    
+}
+header .carousel .slide3 h3{
+    color: #999 !important;
+    position: relative;
+    animation: head3 1.5s;
+    transition: color .5s;
+}
+header .carousel .slide3 h3:hover{
+    color: #fff !important;
+}
+header .carousel .slide3 h1{
+    color: #fff !important;
+    font-size: 80px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    position: relative;
+    animation: head1 2s;
+}
+header .carousel .slide3 .colors{
+    color: #37d5f1f1 !important;
+}
+header .carousel .slide3 p{
+    color: #fff!important;
+    font-size: 18px;
+    position: relative;
+    animation: par 1.5s;
+}
+/*Start KeyFrames Slide 3*/
+@keyframes head3{
+    0%{
+        top: -400px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes head1{
+    0%{
+        right: -800px;
+        opacity: 0;
+    }
+    100%{
+        right: 0;
+        opacity: 1;
+    }
+}
+@keyframes par{
+    0%{
+        bottom: -400px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+/*End KeyFrames Slide 3*/
+/* End animation Slide 3*/
+/*-----------------------------------------------------------------*/
+.header-tool{
+    width: 40px;
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 0 3px #333;
+    z-index: 3;
+}
+.header-tool i{
+    margin-top: 15px;
+    margin-left: 8px;
+    color: #666;
+    cursor: pointer;
+    transition: color .5s;
+    
+}
+.header-tool i:hover{
+    color: #37d5f1f1 !important;
+}
+/* End Header*/
+/*-----------------------------------------------------------------*/
+/* Start Section One*/
+.section1{
+    background-color: #fcfcfc !important;
+}
+.section1 .cont-img{
+    height: 500px !important;
+}
+.section1 h3{
+    transition: color .5s;
+    color: #333 !important;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.section1 h3:hover{
+    color: #37d5f1f1 !important;
+}
+.section1 .far{
+    color: #37d5f1f1 !important;
+}
+/* End Section One*/
+/*-----------------------------------------------------------------*/
+/* Start Section two*/
+.section2{
+    background-color: #f1f1f1f1 !important;
+    cursor: pointer;
+}
+.section2 .icon{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.section2 .icon .first{
+    transform: rotate(90deg);
+}
+.section2 .icon i{
+    color: rgb(187, 181, 181);
+    transition: color .5s ,transform .7s;
+}
+.section2 .icon:hover i{
+    transform: scale(1.2);
+    color: #37d5f1f1 !important;
+}
+.section2 h3{
+    font-size: 18px;
+}
+/* End Section two*/
+/*-----------------------------------------------------------------*/
+/* Start Section Three*/
+.section3{
+    cursor: pointer;
+}
+.section3 h3{
+    font-size: 28px;
+}
+.section3 .under-line{
+    width: 30px;
+}
+.section3 p{
+    font-size: 18px;
+}
+.section3 .hover-im img{
+    transition: transform 1s;
+}
+.section3 .hover-im:hover img{
+    transform: scale(1.2);
+}
+/* End Section Three*/
+/*-----------------------------------------------------------------*/
+/* Start Section Four*/
+.section4{
+    background-color: #37d5f1f1 !important;
+    cursor: pointer;
+}
+.section4 .icon{
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+.section4 .icon i{
+    color: rgb(187, 181, 181);
+    transition: color .5s ,transform .7s;
+}
+.section4 .icon:hover i{
+    transform: scale(1.2);
+    color: #fff !important;
+}
+.section4 h3{
+    font-size: 40px;
+    color: #fff !important;
+    transition: color 1s ,transform 1s;
+}
+.section4 h3:hover{
+    transform: scale(1.1);
+    color: rgb(82, 81, 81) !important;
+}
+.section4 p{
+    font-size: 24px !important;
+    color: rgb(216, 212, 212) !important;
+    transition: color 1s ,transform 1s;
+}
+.section4 p:hover{
+    transform: scale(1.1);
+    color: #fff !important;
+}
+/* End Section Four*/
+/*-----------------------------------------------------------------*/
+/* Start Section Five*/
+.section5{
+    
+}
+.section5 h3{
+    font-size: 18px;
+    padding: 15px 0 !important;
+    margin: 15px 0 !important;
+}
+.section5 p{
+    font-size: 16px !important;
+}
+/* End Section Five*/
+/*-----------------------------------------------------------------*/
+/* Start Section Six*/
+.section6{
+    background-color: #f1f1f1f1 !important;
+}
+.section6 p{
+    font-size: 18px !important;
+}
+.section6 video{
+    border-radius: 5px;
+}
+/* End Section Six*/
+/*-----------------------------------------------------------------*/
+/* Start Section Sevn*/
+.section7{
+    height: 650px !important;
+}
+.section7 .card{
+    border: 0 !important;
+}
+.section7 .cont-img{
+    position: relative;
+}
+.section7 .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s,background-color .5s;
+}
+.section7 .opacity:hover{
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 1;
+}
+.section7 .cont-btn button{
+    border: none;
+    outline: none;
+    background-color: rgb(69, 33, 228) !important;
+    color: #fff !important;
+    padding: 15px;
+}
+/* End Section Sevn*/
+/*-----------------------------------------------------------------*/
+/* Start Section Eight*/
+.section8{
+    height: 750px !important;
+}
+.section8 .card{
+    border: 0 !important;
+}
+.section8 .cont-img{
+    position: relative;
+}
+.section8 .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s,background-color .5s;
+}
+.section8 .opacity:hover{
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 1;
+}
+.section8 .card-body a{
+    border: none;
+    outline: none;
+    transition: color .5s,margin-left .5s;
+}
+.section8 .card-body a:hover{
+    color: #37d5f1f1 !important;
+    margin-left: 5px;
+}
+/* End Section Eight*/
+/*-----------------------------------------------------------------*/
+/* Start Section Nine*/
+.section9{
+    background-color: #37d5f1f1 !important;
+}
+.section9 h1{
+    color: #fff !important;
+}
+.section9 p{
+    font-size: 18px !important;
+    color: #fff !important;
+}
+.section9 a{
+    transition: color .5s;
+    background-color: blue;
+}
+.section9 a:hover{
+    color: #37d5f1f1 !important;
+}
+/* End Section Nine*/
+/*-----------------------------------------------------------------*/
+/*Start section10*/
+.section10{
+    background-color: #403d38;
+    cursor: pointer;
+}
+.section10 p{
+    color: #969696;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+.section10 p:first-of-type{
+    margin: 40px 0 35px 0;
+}
+.section10 h3{
+    color: #fff;
+    font-size: 18px;
+}
+.section10 ul{
+    list-style: none;
+}
+.section10 ul li{
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    color: #969696 !important;
+    padding: 15px 0;
+    font-size: 14px;
+    transition: margin-left .5s,color .5s;
+}
+.section10 ul li:hover{
+    margin-left: 5px;
+    color: #37d5f1f1 !important;
+}
+.section10 ul li span{
+    color: #777 !important;
+}
+.section10 ul li:last-of-type{
+    border-bottom:0;
+}
+.section10 ul li i{
+    padding-right: 5px;
+}
+/*End section10*/
+/*-------------------------------------------------------------------*/
+/* Start Footer*/
+footer{
+    width: 100%;
+}
+footer .name{
+    color: #37d5f1f1 !important;
+}
+/* End Footer*/
+/*-----------------------------------------------------------------*/
